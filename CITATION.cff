@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Mandarin Tonal Processing: a CTC-alignment and F0 pipeline for syllable-level tone analysis"
+authors:
+  - family-names: "[Xiao]"
+    given-names: "[Andi]"
+    affiliation: "New York University"
+    orcid: "https://orcid.org/[0009-0005-8954-3195]"
+repository-code: "https://github.com/[andix43]/Mandarin_Tonal_Processing"
+license: MIT
+year: 2026
