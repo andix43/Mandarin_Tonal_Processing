@@ -119,6 +119,35 @@ For commercial use, or to adapt this pipeline as part of a larger published work
 
 Released under [MIT] — attribution to the author is required in any redistribution or derivative work.
 
+## Acknowledgements and third-party components
+
+This pipeline builds on the following open-source software and models.
+
+**Alignment**
+- `ctc-forced-aligner` (BSD), which incorporates code from `pytorch/audio`
+  (BSD-2-Clause) and MahmoudAshraf97/ctc-forced-aligner (BSD).
+- The default ONNX alignment weights derive from Meta AI's MMS_FA model:
+  Pratap et al. (2023), *Scaling Speech Technology to 1,000+ Languages*.
+  **These weights are licensed CC-BY-NC 4.0.** The MIT license on this
+  repository covers only the code in it — running the pipeline with the
+  default model carries a non-commercial restriction from the model itself.
+  Commercial users should substitute an MIT-licensed alternative
+  (e.g. Wav2Vec2 or HuBERT).
+
+**F0 estimation**
+- pYIN: Mauch & Dixon (2014), *pYIN: A fundamental frequency estimator
+  using probabilistic threshold distributions*, ICASSP.
+- librosa: McFee et al. (2015), *librosa: Audio and music signal analysis
+  in Python*, SciPy.
+
+**Text processing**
+- `pypinyin` for character-to-pinyin conversion and tone labelling.
+
+**Statistics**
+- statsmodels: Seabold & Perktold (2010), *statsmodels: Econometric and
+  statistical modeling with Python*, SciPy.
+- scipy, numpy, pandas, matplotlib.
+
 ## Notes and limitations
 
 - The scripts are Colab exports and run top-to-bottom as notebooks rather than as a CLI; they mount Google Drive on import.
